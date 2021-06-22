@@ -43,10 +43,11 @@ npm install tables2json
 ```
 
 ```js
-{
-  headers: [],
-  rows: [],
-}
+// return 
+  {
+    headers: [],
+    rows: [],
+  }
 ```
 
 ## Changelogs
