@@ -9,7 +9,7 @@ Convert an HTML tables node to a javascript object or array.
 npm install tables2json
 ```
 
-update
+## Update version 
 
 ```bash
 npm install tables2json@latest
