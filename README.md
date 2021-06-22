@@ -55,14 +55,19 @@ npm install tables2json
 
 ## Changelogs
 
-### 0.0.4
+### 0.0.5
+
++ void when table content is empty
+
+### 0.0.1
 
 + initial functions
 + **Thank you, contributors!**
 
 ## License
 
-The MIT License.
+Copyright (c) Natan Cabral
+Licensed under the MIT license.
 
 ## Author
 

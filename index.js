@@ -29,6 +29,8 @@ function t2j( element ){
     simpleRow.length && data.push(simpleRow);
   }
 
+  if( !head.length ) return; // void return;
+
   return {
     headers: head,
     datas: [],
@@ -73,3 +75,13 @@ const tables2json = {
 module.exports = tables2json;
 module.exports.oneTable2json = one;
 module.exports.allTables2json = all;
+
+/*
+
+var s = '<table...>...</table>';
+var htmlObject = document.createElement('div');
+htmlObject.innerHTML = s;
+var table = htmlObject.firstChild;
+
+         
+*/
