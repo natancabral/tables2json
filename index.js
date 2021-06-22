@@ -16,11 +16,14 @@ function t2j( element ){
     cells || (cells = table.rows[0].cells.length);
     let simpleRow = [];
     for( var c = 0; c < cells; c++ ){
-      text = table.rows[r].cells[c].textContent;
-      if( r === 0 ) {
-        head.push(text);
-      }else {
-        simpleRow.push(text);
+      const d = table.rows[r].cells[c];
+      if( d ){
+        text = table.rows[r].cells[c].textContent;
+        if( r === 0 ) {
+          head.push(text);
+        }else {
+          simpleRow.push(text);
+        }  
       }
     }
     simpleRow.length && data.push(simpleRow);
