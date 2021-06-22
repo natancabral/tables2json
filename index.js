@@ -29,7 +29,7 @@ function t2j( element ){
     simpleRow.length && data.push(simpleRow);
   }
 
-  if( !head.length ) return; // void return;
+  if( !head.length ) return null; // void return;
 
   return {
     headers: head,
@@ -59,7 +59,8 @@ function all(){
   const rows = table.length;
 
   for( var r = 0; r < rows; r++ ){
-    all.push( t2j(table[r]) );
+    const content = t2j( table[r] );
+    content && all.push( content );
   }
   
   return all;

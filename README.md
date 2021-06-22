@@ -61,7 +61,7 @@ npm install tables2json@latest
 
 ## Changelogs
 
-### 0.0.5
+### 0.0.6
 
 + void when table content is empty
 
