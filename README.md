@@ -43,16 +43,19 @@ npm install tables2json
 ```
 
 ```js
-// return 
+  // return 
   {
     headers: [],
     rows: [],
   }
+  // usable to pdfkit-table
+  // https://www.npmjs.com/package/pdfkit-table
+  // https://github.com/natancabral/pdfkit-table#readme
 ```
 
 ## Changelogs
 
-### 0.0.2
+### 0.0.3
 
 + initial functions
 + **Thank you, contributors!**
@@ -75,7 +78,3 @@ The MIT License.
     </td>
   </tr>
 </table>
-
-## Thank you
-
-- Javascript ;)
