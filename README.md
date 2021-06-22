@@ -9,16 +9,31 @@ Convert an HTML tables node to a javascript object or array.
 npm install tables2json
 ```
 
+## Require / Import
+
+```js
+  const { oneTable2json, allTables2json } = require("tables2json");
+  // import { oneTable2json, allTables2json } from "tables2json";
+```
+```js
+  const tables2json = require("tables2json");
+  // import tables2json from "tables2json";
+```
+
 ## Use
 
 ```js
   const { oneTable2json, allTables2json } = require("tables2json");
+  // get element by id
+  const table = oneTable2json('table_id'); // object
+  // get all tables
+  const tables = allTables2json(); // array
+  // print
+  console.log( table, tables );
 ```
+
 ```js
   const tables2json = require("tables2json");
-```
-```js
-  // require
   // get element by id
   const table = tables2json.one('table_id'); // object
   // get all tables
@@ -27,9 +42,16 @@ npm install tables2json
   console.log( table, tables );
 ```
 
+```js
+{
+  headers: [],
+  rows: [],
+}
+```
+
 ## Changelogs
 
-### 0.1.1
+### 0.0.2
 
 + initial functions
 + **Thank you, contributors!**
