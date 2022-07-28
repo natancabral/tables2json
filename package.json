@@ -1,6 +1,6 @@
 {
   "name": "tables2json",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Convert an HTML table node to a javascript object.",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,11 @@
   "homepage": "https://github.com/natancabral/tables2json#readme",
   "directories": {
     "example": "example"
+  },
+  "devDependencies": {
+    "tables2json": "^0.0.6"
+  },
+  "dependencies": {
+    "jsdom": "^20.0.0"
   }
 }

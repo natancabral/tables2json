@@ -29,21 +29,21 @@ npm install tables2json@latest
 ## Use
 
 ```js
-  const { oneTable2json, allTables2json } = require("tables2json");
-  // get element by id
-  const table = oneTable2json('table_id'); // object
-  // get all tables
-  const tables = allTables2json(); // array
-  // print
-  console.log( table, tables );
-```
-
-```js
   const tables2json = require("tables2json");
   // get element by id
   const table = tables2json.one('table_id'); // object
   // get all tables
   const tables = tables2json.all(); // array
+  // print
+  console.log( table, tables );
+```
+
+```js
+  const { oneTable2Json, allTables2Json } = require("tables2json");
+  // get element by id
+  const table = oneTable2Json('table_id'); // object
+  // get all tables
+  const tables = allTables2Json(); // array
   // print
   console.log( table, tables );
 ```
